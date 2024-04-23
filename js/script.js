@@ -5001,14 +5001,20 @@ function valid() {
 
     ];
 
+    // Access the input value
     let numb = document.forms['myForm']['num'];
-    let inputValue = parseInt(numb.value.trim());
+    let inputValue = numb.value.trim();
 
-    if (isNaN(inputValue) || inputValue.toString().length !== 6) {
-        alert('Please enter a valid 6-digit number.');
+    // Regular expression to validate the format A-Z, a-z, 1-9, exactly 8 characters
+    let validFormat = /^[A-Za-z0-9]{8}$/;
+
+    // Check if input matches the valid format
+    if (!validFormat.test(inputValue)) {
+        alert('Please enter a valid 8-character alphanumeric code.');
         return false;
     }
 
+    // Check if the code is in the list of valid codes
     if (numbers.includes(inputValue)) {
         document.getElementById('demo').innerHTML = 'আপনার পণ্য টি অরিজিনাল' + "<img src='./images/verify.png'>";
     } else {
