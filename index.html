@@ -52,10 +52,10 @@
       <p>আপনার হাতে থাকা প্রোডাক্টটির পিছনে দেয়া<br>
         ৮ ডিজিটের সিকিউরিটি কোডটি এখানে লিখুন।</p>
         <!-- ============= -->
-        <form name="myForm" style="margin: 10px;" onsubmit=" return valid()">
-          <input type="number" name="num" class="numb"><br><br>
-          <input type="submit" value="Submit" class="submit">
-       </form>
+      <form name="myForm" style="margin: 10px;" onsubmit="return valid()">
+    <input type="text" name="num" class="numb" pattern="[A-Za-z0-9]{8}" title="Please enter an 8-character alphanumeric code." required><br><br>
+    <input type="submit" value="Submit" class="submit">
+</form>
        <!-- <div id="demo"></div> -->
         <!-- ============= -->
 
