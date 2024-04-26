@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shapon Traders</title>
+    <title>Online Shop</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
@@ -20,8 +20,7 @@
 
     <nav class="navbar navbar-expand-lg ">
         <div class="container">
-          <a class="navbar-brand" href="#">
-            <img src="./images/logo.png" alt="">
+          <a class="navbar-branlogo.png" alt="">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon">
@@ -31,13 +30,16 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">About</a>
+                <a class="nav-link active" aria-current="page" href="about.html">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Check Product</a>
+                <a class="nav-link active" aria-current="page" href="product.html">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="check.html">Check Authenticity</a>
               </li>
               
             </ul>
@@ -46,16 +48,45 @@
         </div>
       </nav>
 
-      <!-- =================== Check ===================== -->
+      <!-- ========================= Banner ================================ -->
+
+      <section class="banner-part">
+        <div class="banner-slider">
+             
+        <div class="b banner1">
+            <img src="./images/1.jpg" alt="">
+        </div>
+        <div class="b banner2">
+            <img src="./images/2.jpg" alt="">
+        </div>
+        <div class="b banner3">
+            <img src="./images/3.jpg" alt="">
+        </div>
+        <div class="b banner4">
+            <img src="./images/4.jpg" alt="">
+        </div>
+        <div class="b banner5">
+            <img src="./images/5.jpg" alt="">
+        </div>
+        <div class="b banner6">
+            <img src="./images/6.jpg" alt="">
+        </div>
+        <div class="b banner7">
+            <img src="./images/7.jpg" alt="">
+        </div>
+        </div>
+      </section>
+      <!-- ================================================================= -->
+
       <section class="check">
         <h1>আপনার প্রোডাক্টটি অরিজিনাল কিনা চেক করুন</h1>
       <p>আপনার হাতে থাকা প্রোডাক্টটির পিছনে দেয়া<br>
         ৮ ডিজিটের সিকিউরিটি কোডটি এখানে লিখুন।</p>
         <!-- ============= -->
-      <form name="myForm" style="margin: 10px;" onsubmit="return valid()">
-    <input type="text" name="num" class="numb" pattern="[A-Za-z0-9]{8}" title="Please enter an 8-character alphanumeric code." required><br><br>
-    <input type="submit" value="Submit" class="submit">
-</form>
+        <form name="myForm" style="margin: 10px;" onsubmit=" return valid()">
+          <input type="text" name="num" class="numb"><br><br>
+          <input type="submit" value="Submit" class="submit">
+       </form>
        <!-- <div id="demo"></div> -->
         <!-- ============= -->
 
@@ -63,11 +94,30 @@
           কোডটি পূর্বে ব্যবহৃত হয়ে গেলে তা মেয়াদ উত্তীর্ণ দেখাবে।
            
         </p>
-        <img src="./images/logo.png" alt="">
+        <img src="./images/logo.jpeg" alt="">
       </section>
 
-       
-   
+      <!-- ==================== Footer ================= -->
+        <footer>
+        <div class="container">
+          <div class="row d-flex justify-content-between">
+            <div class="col-md-7 left">
+              <h4>About Us</h4>
+              <p>Online Shop, we are highly dedicated to provide our customers with a wide range of genuine and authentic products. Our company prides itself on offering high-quality items that cater to various needs, including weight loss and weight gain products, anti-diabetic products, as well as a diverse selection of mens and womens clothing. With a commitment to excellence, we strive to be your one-stop destination for all your shopping requirements.</p>
+            </div>
+            <div class="col-md-4 right">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="check.html">Check Authenticity</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>  
+     
 
     <script src="./js/jquery-1.12.4.min.js"></script>
     <script src="./js/slick.min.js"></script>
